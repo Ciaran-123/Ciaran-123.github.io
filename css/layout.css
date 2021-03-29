@@ -1,0 +1,145 @@
+/* These are some suggested groupings for your stylesheet... */
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+/* box sizing */
+
+
+/* element styling (e.g. standard p, h1, h2, a, etc) */
+h2 {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 150%;
+}
+p, li {
+	font-size: 120%;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.image-caption {
+	font-size: 120%;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+a {
+	color: #777777;
+}
+/* flexible content images code */ 
+.an-image {
+	position: relative;
+}
+.image-caption {
+	position:relative;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: black;
+	padding: 6px 8px;
+	background: #C6DBDA;
+	visibility: hidden;
+	
+}
+.an-image:hover .image-caption {   /*I learnt how to make the text appear when you hover over an image by reading this : https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering#:~:text=Wrap%20the%20image%20and%20the,appear%20while%20hovering%20that%20div.&text=You%20can%20also%20do%20the,alt%20text%20of%20your%20image. */
+	visibility: visible;           /* This helped me understand how to make the text only appear when you hover over the relevant image using visibility. I did this because I didnt want the image gallery to be filled with a lot of text.*/
+    border: solid green 2px;
+	border-radius: 10px;
+}
+/* navigation styles */
+    nav{
+	    
+		width: 100%;
+		margin: auto;
+		background-color: #B28DFF;
+		height: 50px;
+	}
+	nav ul{
+		display: flex;
+		flex-wrap: wrap;
+	    padding: 0;
+        margin:0;
+		float: right;
+		background-color: #B28DFF;
+	}
+	nav li {
+		display: inline-block;
+		width: auto;
+		font-family: 'Maven Pro', sans-serif;
+	}
+	nav a {
+		display: block;
+		text-align: center;
+		color: #FFFFFF;
+		text-decoration: none;
+		line-height: 50px;
+		padding: 0px 20px;
+	}
+	nav a:hover {    /* I learned how to create the nav bar with the help of these two videos: https://www.youtube.com/watch?v=rDiiIhVuODQ&ab_channel=KenSwartwout */
+		color: black;  /* https://www.youtube.com/watch?v=Y6DwspK_wnM&ab_channel=CodeInstinct  These helped me to understand how to change the colours with hover so the nav bar is easier to use and so you can see which one you are hovering over before you click it.*/
+		background-color: #DBFFD6;
+	}
+/* page header styles*/
+header h1{
+	text-align: center;
+	font-size: 250%;
+	font-family: 'Pacifico', cursive;
+	color: #77DF79;
+}
+header {
+	padding: 5px;
+	background-image: url('headerimage.jpg');
+}
+/* main layout */
+body section{
+	width:70%;
+    margin: auto;
+}
+.header-content p {
+	margin: 0px;
+	margin-left: 5%;
+	padding: 2px 3px;
+	color: #836853;
+	border-radius: 7px;
+	font-size: 95%;
+	background-color: #BFD4DB;
+	width: 273px;
+}
+/* styling for the section content */
+section {
+	margin: 5px 0px;
+	padding: 7px 10px;
+	background-color: #97A2FF;
+}
+/* background colours for sections */
+html {
+	background-color: #F3FFE3;
+}
+.container-content{
+	background-color: #AABDFF;
+	padding: 3px 8px;
+}
+/* form styling */
+input, textarea{
+	padding: 5px 6px;
+	border: 3px solid #DCFFFB;
+    background-color: #726F9F;
+	color: #FFFFFF;
+	border-radius: 5px;
+	font-size: 100%;
+}
+input:focus, textarea:focus {
+	background-color: #826F9F;
+	border: 3px solid #BFD4DB;     /* I learnt about how to do all the styling for the form here: https://www.w3schools.com/css/css_form.asp */
+	outline: none;     	/* I learned that the border of the input and text area can be changed when it gets focus (clicked on) and to round the edges of the border with border-radius.*/
+}
+input[type=submit] {
+	position: center;
+	width: 100%;
+	background-color: lightgreen;
+}
+
+/* footer styling */
+footer {
+	text-align: center;
+
+}
+
