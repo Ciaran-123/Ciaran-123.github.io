@@ -1,49 +1,129 @@
 <!DOCTYPE html>
-<html lang=”en”> 
-<meta charset = "UTF-8" /> 
-<head> 
-<title>My Very Basic Homepage</title> 
+<html lang="en-gb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ciaran Skelly's Portfolio" />
+    <!-- meta tag below is used for Internet Explorer and mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--This means that the browser will (probably) render the width of the page at the width of its own screen. //-->
+    <title>Ciaran's Portfolio</title>
+    <!-- add your stylesheet and any other styling code, e.g. google fonts  a good link is https://fonts.google.com/-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&displayfamily=Roboto+Condensed:300Maven+Pro&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/layout.css" /> 
 </head>
+
+<!-- all the classes below will require some CSS styles to be included in your layout.css file, if you do not
+include a style for these classes you should remove the class from your html file //-->
 <body>
-<header>
-  <h1>My Home Page</h1>
-  <nav>
-  <ul>
-    <li><a href="#">About me:</a></li>
-    <li><a href="#">Education</a></li>
-    <li><a href="#">Hobbies</a></li>
-    <li><a href="favourite-meal.html" target="_self">Favourite Food Page</a></li>
-  </ul>
-  </nav>
-</header>
-<article>
-<h2>About me:</h2> 
-<p> Hi, my name is Ciaran. I am in pod 6. I live in Dublin and I am 18 years old </p> 
-<h2>Education</h2>
-<p>I went to Lusk Community College. My favourite subjects in order are...</p>
-<ol>
-<li> maths</li>
-<li> DCG</li>
-<li> Spanish</li>
-</ol>
+    <main>
+	 <header>  <!-- What does the header do? The Header creates a container for introductory content to be placed in.see nav above-->
+            <div class="header-content">  <!-- What is a div?  The div tag is used to divide the HTML document into different sections that can contain any type of content. It can be styled in css using class or id.-->
+                <h1>Ciaran's Portfolio</h1>
+                <p>A student with an appetite for knowledge</p>
+            </div>
+        </header>
+	    <!-- You could style Main here if you wish-->
+        <nav> <!-- the navigation part of the page.  Note links just jump to different parts of the page.-->
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">Work Experience</a></li>
+                <li><a href="#images">Image Gallery</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+       
+    <!--Note here the use of an ID.  the link above actually links to this.  It's a good example of where an ID can be used.  Note also that the section has a class attribute.  use this for styling. -->
+        <section id="about">  <!--What does the section do here?  The <section> creates a section that does not have a more specific element to represent it, such as navigation bar using a <nav> element.-->
+            <div class="container-content">
+                <h2>About Me</h2>
+                <div>
+				<p>My name is Ciaran Skelly, I am 18 years old. I live in Lusk, Co.Dublin. I attended Lusk Community College for my second level education.  I am now studying Computer Applications at Dublin City University. I chose to do computer applications at DCU because I enjoyed learning how to build my own computer for playing games. I wanted to learn more about computers and how they work. I found it interesting learning the little bit of programming I had done before I started computer applications. I have a lot of hobbies, some of which include music and playing video games. I am currently learning how to play guitar, using mainly youtube videos because of the pandemic making it more difficult to get a guitar teacher. </p>
+                    <!-- add your 150 word maximum About Me content here.  Use HTML you know, marks for the HTML.  Marks deducted for poor grammar, spelling errors etc. -->
+                </div>
+            </div>
+        </section>
 
-<h2>Hobbies</h2>
-<ul>
-<li>videogames</li>
-<img src="images\starwars.jpg" alt="pic of star wars game" height="225" width="400"<figcaption><a href=https://www.ea.com/games/starwars/squadrons/>My most recent game</a></figcaption>
-<li>Playing guitar</li>
-<a href="images/guitar.jpg"><img src="images/guitarthumb.jpg" alt="picture of guitar" title="Click to enlarge" /></a>
-<li>music</li>
-</ul>
-<p><a href=https://www.youtube.com/watch?v=BM6jn891seU/>Here's a song I like</a></p>
+        <section id="work">
+            <div class="container-content">
+                <h2>Work Experience</h2>
+                <div>
+				 <p>On my previous work experience when I was in sixth year, I worked on a farm near to where I live called <a href="http://taylorsoflusk.ie/">Taylor’s of Lusk</a> as a summer job.  I worked for roughly two months. Most of the time I was in the sheds prepping vegetables however, there were a number of times I worked in the fields. My typical duties included:</p>
+                 <ul>
+                  <li> Prepping and weighing broccoli</li>
+                  <li> Packing broccoli into boxes</li>
+                  <li> Going into the greenhouses and picking chillies</li> 
+                  <li> Packing and labelling chillies</li>
+                  <li> Going into the field and harvesting garlic</li>
+                 </ul>
+                <p> From the work experience I did it was clear that I have no interest in pursuing a future career in this sector as I found it to be quite repetitive and boring. I do still think that the work experience was beneficial to me for the general work experience though. I also learned the importance of clear communication because there were a number of issues that arose during my time there, on multiple occasions I did not know what I was supposed to be doing and I had to ask for clarification.</p>
 
-<h2>Favourite meal</h2>
-<p><a href="favourite-meal.html" target="_self">Favourite Food Page</a></p>
-</article>
+                    <!-- add your 200 word maximum work experience content here.  You can use lists of things as well as paragraphs.  Show off the HTML you know.  marks for the HTML, and how well you use it. marks deducted for poor grammar or spelling errors-->
+                </div>
+            </div>
+        </section>
+				<br><br>
 
-<footer>
-<h2>Contact Details</h2>
-<p>Contact me through email: ciaran.skelly4@mail.dcu.ie</p>
-</footer>
-</body> 
-</html 
+        <section id="images">
+            <div class="container-content">
+                <h2>Image Gallery</h2>
+                <div>
+                    <div class="an-image">
+					    <img src="images/music1.jpg" alt="picture of headphones and vinyl" height="156" width="235">
+                        <!-- add image one here with 150 word maximum caption.  You may remove the caption if you wish.  Don't forget to use alt tags. -->
+                        <div class="image-caption">Music is very important to me as a way of expressing myself. I like listening to a lot of different genres of music and to a lot of different artists. I would love to make my own music one day in the future.</div>
+                    </div>
+                    <div class="an-image">
+					 <img src="images/food1.jpg" alt="pictures of a plate of curry" height="156" width="235">
+                   <!-- add image two here with 150 word maximum caption -->
+                        <div class="image-caption">I have recently started to cook more for myself and for my family. It has made me realise the enjoyment you can get out of preparing and cooking your own food. As my mam usually cooks more traditional irish dinners, we get to try new flavours and recipes. I like to make a lot of spicy food and currys. My favourite desserts to make are cheese cake and millionaires shortbread. </div>
+                    </div>
+                    <div class="an-image">
+					 <img src="images/friends1.jpg" alt="pictures of a group of friends studying" height="156" width="235">
+                        <!-- add image three here with 150 word maximum caption -->
+                        <div class="image-caption">Since the start of the pandemic I have realised the importance of staying in contact with my family and friends, I have stayed in contact with them through various social media platforms and since we can't meet up in real life a lot of my friends who haven't played many video games have started to play them as a way of hanging out and chatting. </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container-content">
+                <h2>Contact Me</h2>
+                <div class="contactform">
+                    <form action="https://formspree.io/ciaran.skelly4@mail.dcu.ie" method="post">
+	                    <!-- Style this nicely.  Don't worry if the form doesn't work, marks here for how well you style it. -->
+                        <p>
+                            <label for="contact-name">Your Name</label>
+                            <input id="contact-name" type="text" name="contact-name" />
+                        </p>
+                        <p>
+                            <label for="contact-email">Your email address</label>
+                            <input id="contact-email" type="email" name="contact-email" /> </p>
+                        <p>
+                            <label for="contact-phone">Your phone number</label>
+                            <input id="contact-phone" type="tel" name="contact-phone" /> </p>
+                        <p>
+                            <label for="contact-message">Your message</label>
+                            <textarea id="contact-message" name="contact-message" rows="5"> </textarea>
+                        </p>
+                        <p>
+                            <input type="submit" value="send my message" /> </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer id = "footer-layout">
+                <p> &copy; <a href="dcu.ie/">DCU 2019-2020</a>
+				<span class="footer-separator">&middot;</span>
+				<span class="footer-text">Ciaran Skelly</span> <span class="footer-separator">&middot;</span> <span class="footer-text">This is student coursework</span> <span class="footer-separator">&middot;</span> <span class="footer-text">Lecturer<a href="http://www.computing.dcu.ie/~jkernan">Jane Kernan</a></span> <span class="footer-separator">&middot;</span> <span class="footer-text">
+     <a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a><br/>
+	 
+        </span> </p>
+        <!-- Note that the link to the validator above will only produce results when your page is uploaded to the server, and you click on the link from the browser.-->
+         
+        </footer>
+    </main>
+</body>
+
+</html>
